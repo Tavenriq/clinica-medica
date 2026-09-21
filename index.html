@@ -17,7 +17,7 @@
 
 <title>Dr. Daniel Leles da Silveira — Atendimento médico online | CRM-MG 111.452</title>
 
-<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
@@ -840,7 +840,6 @@
     const nome = document.getElementById('nome').value.trim();
     const cidade = document.getElementById('cidade').value.trim();
     const motivo = document.getElementById('motivo').value;
-    const horario = document.getElementById('horario').value;
     const msg = document.getElementById('msg').value.trim();
     const consent = document.getElementById('consent').checked;
 
@@ -851,7 +850,6 @@
     if (cidade) texto += `, de ${cidade}`;
     texto += '.';
     if (motivo) texto += ` Gostaria de agendar: ${motivo}.`;
-    if (horario) texto += ` Preferência de horário: ${horario}.`;
     if (msg) texto += ` ${msg}`;
 
     if (window.posthog) posthog.capture('formulario_enviado', { motivo: motivo || 'nao_informado' });
