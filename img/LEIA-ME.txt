@@ -1,0 +1,10 @@
+Coloque aqui as fotos reais do médico:
+
+  dr-daniel.jpg     -> foto usada no topo (hero). Recomendado: 800x1040px, vertical.
+  dr-daniel-2.jpg   -> foto da seção "Sobre".   Recomendado: 700x1000px, vertical.
+  og-capa.jpg       -> imagem que aparece ao compartilhar o link. 1200x630px, horizontal.
+
+Dicas:
+- Exporte em JPG com qualidade ~80 e menos de 300 KB cada (use squoosh.app).
+- Fotos reais, em boa luz, sem banco de imagens.
+- Nunca use foto de paciente, nem antes/depois.
