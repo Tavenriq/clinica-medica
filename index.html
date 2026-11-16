@@ -61,38 +61,55 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --teal-50: #f0fdfa;
-    --teal-100: #ccfbf1;
-    --teal-200: #99f6e4;
-    --teal-300: #5eead4;
-    --teal-400: #2dd4bf;
-    --teal-500: #14b8a6;
-    --teal-600: #0d9488;
-    --teal-700: #0f766e;
-    --teal-800: #115e59;
-    --teal-900: #134e4a;
-    --blue-50: #eff6ff;
-    --slate-50: #f8fafc;
-    --slate-100: #f1f5f9;
-    --slate-200: #e2e8f0;
-    --slate-300: #cbd5e1;
-    --slate-400: #94a3b8;
-    --slate-500: #64748b;
-    --slate-600: #475569;
-    --slate-700: #334155;
-    --slate-800: #1e293b;
-    --slate-900: #0f172a;
-    --white: #ffffff;
-    --font-display: 'DM Serif Display', Georgia, serif;
-    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
-    --radius-sm: 8px;
-    --radius-md: 14px;
-    --radius-lg: 22px;
-    --radius-xl: 32px;
-    --shadow-sm: 0 1px 3px rgba(15,23,42,.06), 0 1px 2px rgba(15,23,42,.04);
-    --shadow-md: 0 4px 16px rgba(15,23,42,.08), 0 2px 6px rgba(15,23,42,.04);
-    --shadow-lg: 0 20px 60px rgba(15,23,42,.1), 0 8px 24px rgba(15,23,42,.06);
-  }
+  /* ── PALETA PRINCIPAL ── */
+  --teal-50: #E5F7FA;
+  --teal-100: #D1EFF2;
+  --teal-200: #B2E1E5;
+  --teal-300: #80CCD2;
+  --teal-400: #13A89E;
+  --teal-500: #008C95;
+  --teal-600: #006D73;
+  --teal-700: #00545A;
+  --teal-800: #064D49;
+  --teal-900: #003D42;
+
+  /* ── PALETA COMPLEMENTAR ── */
+  --blue-50: #E5F7FA;
+
+  --slate-50: #F5FBFC;
+  --slate-100: #E5F7FA;
+  --slate-200: #D1E7E9;
+  --slate-300: #B5D2D5;
+  --slate-400: #7D9FA2;
+  --slate-500: #59777A;
+  --slate-600: #3F5E61;
+  --slate-700: #29494C;
+  --slate-800: #17383B;
+  --slate-900: #003D42;
+
+  /* ── CORES DE IDENTIDADE ── */
+  --gold: #E9BE55;
+  --navy: #172A40;
+  --purple: #795A9E;
+  --lavender: #D8BEF0;
+
+  --white: #FFFFFF;
+
+  /* ── TIPOGRAFIA ── */
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  /* ── BORDAS ── */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+
+  /* ── SOMBRAS ── */
+  --shadow-sm: 0 2px 8px rgba(0, 84, 90, 0.05);
+  --shadow-md: 0 6px 20px rgba(0, 84, 90, 0.08);
+  --shadow-lg: 0 20px 60px rgba(0, 84, 90, 0.12);
+}
 
   html { scroll-behavior: smooth; }
 
@@ -493,6 +510,529 @@
     background: none; border: none; font-size: 1.5rem; cursor: pointer;
     color: var(--slate-600);
   }
+
+  /* =========================================================
+   IDENTIDADE VISUAL DR. DANIEL LELES
+   Azul-petróleo + Turquesa + Dourado
+   ========================================================= */
+
+/* ── GERAL ── */
+
+body {
+  background: #FFFFFF;
+  color: #17383B;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: #E9BE55;
+}
+
+/* ── NAVBAR ── */
+
+nav {
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(0, 84, 90, 0.10);
+}
+
+.nav-logo {
+  color: #00545A;
+}
+
+.nav-logo span {
+  color: #59777A;
+}
+
+.nav-links a {
+  color: #3F5E61;
+}
+
+.nav-links a:hover {
+  color: #008C95;
+}
+
+.nav-cta {
+  background: #00545A;
+  color: #FFFFFF;
+  box-shadow: 0 3px 12px rgba(0, 84, 90, 0.15);
+}
+
+.nav-cta:hover {
+  background: #008C95;
+}
+
+.hamburger span {
+  background: #00545A;
+}
+
+/* ── HERO ── */
+
+#hero {
+  background: #FFFFFF;
+}
+
+#hero::before {
+  background:
+    radial-gradient(
+      ellipse 75% 60% at 80% 45%,
+      rgba(229, 247, 250, 0.95) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 35% 40% at 10% 85%,
+      rgba(19, 168, 158, 0.08) 0%,
+      transparent 70%
+    );
+}
+
+.hero-badge {
+  background: #E5F7FA;
+  border: 1px solid #B2E1E5;
+  color: #00545A;
+}
+
+.hero-badge i {
+  color: #008C95;
+}
+
+.hero-content h1 {
+  color: #00545A;
+}
+
+.hero-content p {
+  color: #59777A;
+}
+
+.btn-primary {
+  background: #00545A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 84, 90, 0.20);
+}
+
+.btn-primary:hover {
+  background: #008C95;
+  box-shadow: 0 8px 28px rgba(0, 140, 149, 0.25);
+}
+
+.btn-secondary {
+  color: #00545A;
+  border: 1px solid #B5D2D5;
+}
+
+.btn-secondary:hover {
+  border-color: #008C95;
+  color: #00545A;
+  background: #E5F7FA;
+}
+
+.hero-img-wrap {
+  border-radius: 32px 32px 32px 80px;
+  box-shadow: 0 20px 60px rgba(0, 84, 90, 0.15);
+}
+
+.hero-img-card {
+  border: 1px solid #E5F7FA;
+}
+
+.hero-img-card .icon-circle {
+  background: #E5F7FA;
+}
+
+.hero-img-card .icon-circle i {
+  color: #008C95;
+}
+
+/* ── TÍTULOS E IDENTIDADE DAS SEÇÕES ── */
+
+.section-label {
+  background: #E5F7FA;
+  color: #00545A;
+  border: 1px solid #B2E1E5;
+}
+
+.section-title {
+  color: #00545A;
+}
+
+.section-sub {
+  color: #59777A;
+}
+
+/* ── SOBRE ── */
+
+.sobre-img-wrap {
+  border: 1px solid #E5F7FA;
+  box-shadow: 0 15px 45px rgba(0, 84, 90, 0.10);
+}
+
+.sobre-content blockquote {
+  color: #00545A;
+  border-left: 3px solid #E9BE55;
+}
+
+.sobre-content p {
+  color: #3F5E61;
+}
+
+.diferencial-item {
+  background: #F5FBFC;
+  border: 1px solid #D1E7E9;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.diferencial-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.diferencial-item .icon {
+  color: #008C95;
+}
+
+.diferencial-item strong {
+  color: #00545A;
+}
+
+.diferencial-item span {
+  color: #59777A;
+}
+
+/* ── ATENDIMENTOS ── */
+
+#atuacoes {
+  background: #E5F7FA;
+}
+
+.servicos-header .section-title {
+  color: #00545A;
+}
+
+.servico-card {
+  background: #FFFFFF;
+  border: 1px solid #D1E7E9;
+  box-shadow: 0 3px 12px rgba(0, 84, 90, 0.04);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  border-color: #80CCD2;
+  box-shadow: 0 12px 28px rgba(0, 84, 90, 0.10);
+}
+
+.servico-icon {
+  background: #E5F7FA;
+  border: 1px solid #D1EFF2;
+}
+
+.servico-icon i {
+  color: #008C95;
+}
+
+.servico-card h3 {
+  color: #00545A;
+}
+
+.servico-card p {
+  color: #59777A;
+}
+
+.servico-card li {
+  color: #3F5E61;
+}
+
+.servico-card li::before {
+  color: #E9BE55;
+}
+
+/* ── COMO FUNCIONA ── */
+
+#como-funciona {
+  background:
+    radial-gradient(
+      ellipse at top right,
+      rgba(0, 140, 149, 0.18),
+      transparent 60%
+    ),
+    #00545A;
+  color: #FFFFFF;
+}
+
+#como-funciona .section-label {
+  background: rgba(229, 247, 250, 0.10);
+  color: #E5F7FA;
+  border-color: rgba(229, 247, 250, 0.20);
+}
+
+#como-funciona .section-title {
+  color: #FFFFFF;
+}
+
+#como-funciona .section-sub {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.porque-item {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(229, 247, 250, 0.16);
+  transition: transform 0.25s, background 0.25s;
+}
+
+.porque-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.porque-num {
+  color: #E9BE55;
+}
+
+.porque-item h3 {
+  color: #FFFFFF;
+}
+
+.porque-item p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* ── CONTATO ── */
+
+#contato {
+  background: #F5FBFC;
+}
+
+.contato-info h2 {
+  color: #00545A;
+}
+
+.contato-info > p {
+  color: #59777A;
+}
+
+.form-wrap {
+  background: #FFFFFF;
+  border: 1px solid #D1E7E9;
+  box-shadow: 0 10px 35px rgba(0, 84, 90, 0.07);
+}
+
+.form-wrap h3 {
+  color: #00545A;
+}
+
+.form-wrap .form-intro {
+  color: #59777A;
+}
+
+.form-group label {
+  color: #29494C;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #17383B;
+  border: 1px solid #D1E7E9;
+  background: #FFFFFF;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #008C95;
+  box-shadow: 0 0 0 3px rgba(0, 140, 149, 0.12);
+}
+
+.consent {
+  color: #59777A;
+}
+
+.consent a {
+  color: #00545A;
+}
+
+.consent a:hover {
+  color: #008C95;
+}
+
+/* Botão WhatsApp com identidade do site */
+
+.btn-form {
+  background: #00545A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 18px rgba(0, 84, 90, 0.18);
+}
+
+.btn-form:hover {
+  background: #008C95;
+}
+
+.form-note {
+  color: #7D9FA2;
+}
+
+/* Informações de contato */
+
+.info-list li {
+  border-bottom-color: #D1E7E9;
+}
+
+.info-icon {
+  background: #E5F7FA;
+}
+
+.info-icon i {
+  color: #008C95;
+}
+
+.info-list strong {
+  color: #59777A;
+}
+
+.info-list span,
+.info-list a {
+  color: #17383B;
+}
+
+.info-list a:hover {
+  color: #008C95;
+}
+
+/* ── HORÁRIOS E MAPA ── */
+
+.horarios {
+  background: #064D49;
+}
+
+.horarios h2 {
+  color: #FFFFFF;
+}
+
+.horario-table tr {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.horario-table td:first-child {
+  color: #B2E1E5;
+}
+
+.horario-table td:last-child {
+  color: #FFFFFF;
+}
+
+/* ── AVISO DE EMERGÊNCIA ── */
+
+.emergencia {
+  background: #FFF9E8;
+  border-top: 1px solid #E9BE55;
+  border-bottom: 1px solid #E9BE55;
+  color: #66501A;
+}
+
+.emergencia strong {
+  color: #4A3910;
+}
+
+/* ── RODAPÉ ── */
+
+footer {
+  background: #003D42;
+  color: rgba(229, 247, 250, 0.65);
+}
+
+.footer-logo {
+  color: #FFFFFF;
+}
+
+.footer-logo span {
+  color: rgba(229, 247, 250, 0.60);
+}
+
+.footer-links a {
+  color: rgba(229, 247, 250, 0.65);
+}
+
+.footer-links a:hover {
+  color: #E9BE55;
+}
+
+.footer-legal {
+  color: rgba(229, 247, 250, 0.45);
+}
+
+/* ── WHATSAPP FLUTUANTE ── */
+
+.wa-float {
+  background: #008C95;
+  color: #FFFFFF;
+  box-shadow: 0 4px 24px rgba(0, 84, 90, 0.28);
+}
+
+.wa-float:hover {
+  background: #00545A;
+  transform: scale(1.08);
+}
+
+/* ── MENU MOBILE ── */
+
+.mobile-menu {
+  background: #FFFFFF;
+}
+
+.mobile-menu a {
+  color: #00545A;
+}
+
+.mobile-menu a:hover {
+  color: #008C95;
+}
+
+.mobile-menu-close {
+  color: #00545A;
+}
+
+/* ── RESPONSIVIDADE ── */
+
+@media (max-width: 900px) {
+  #hero::before {
+    background:
+      radial-gradient(
+        ellipse 100% 70% at 50% 20%,
+        #E5F7FA 0%,
+        transparent 75%
+      );
+  }
+
+  .nav-cta {
+    background: #00545A;
+  }
+}
+
+@media (max-width: 600px) {
+  .servico-card {
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 8vw, 2.8rem);
+  }
+
+  .section-title {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+  }
+
+  .wa-float {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 54px;
+    height: 54px;
+  }
+}
 </style>
 </head>
 <body>
